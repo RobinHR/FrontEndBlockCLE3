@@ -1,1 +1,149 @@
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(54, 69, 34);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+
+#gekozen {
+    color:black;
+    text-decoration: none;
+}
+
+#geschiedenis {
+    color:black;
+    text-decoration: none;
+}
+
+#minecraft {
+    color:black;
+    text-decoration: none;
+}
+
+#prullenbakken {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:red;
+    font-weight:bold;
+}
+
+h1, h2, h3 {
+    margin-top: 4px;
+    font-weight:normal;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+nav div {
+    padding:8px;
+}
+
+.imagegallery {
+    margin:0;
+    padding:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.imagegallery figure {
+    display:block;
+    margin:0;
+    width:30%;
+}
+
+.imagegallery img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.imagegallery2 {
+    margin:0;
+    padding:0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.imagegallery2 figure {
+    display:block;
+    margin:0;
+    width: 30%;
+}
+
+.imagegallery2 img {
+    width: 300%;
+    height:300px;
+    object-fit:cover;
+}
+
+
+header {
+    font-size:2em;
+    padding-top:10vh;
+    color:white;
+    text-align:center;
+    height:30vh;
+    background-image:url(https://woneninsawa.nl/templates/yootheme/cache/27_Sawa_luchtfotos_Ossip_edit1-7733688e.jpeg);
+    background-size:cover;
+    background-position:center;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    color: rgb(22, 22, 66);
+    font-size: 1.1em;
+    max-width:800px;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    height:30vh;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;
+}
+
+figcaption {
+    font-size: 0.7em;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        display: block;
+        padding: 10px;
+        position: static;
+    }
+    section {
+        max-width: 90%;
+    }
+
+}
