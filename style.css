@@ -1,149 +1,118 @@
-
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
-
-html {
-    scroll-behavior: smooth;
+::selection{
+  color: #000;
+  background: #fff;
 }
-
-body {
-    background-color: rgb(54, 69, 34);
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
 }
-
-a {
-    color:black;
-    text-decoration:none;
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-
-#gekozen {
-    color:black;
-    text-decoration: none;
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
-
-#geschiedenis {
-    color:black;
-    text-decoration: none;
+.menu ul{
+  display: inline-flex;
 }
-
-#minecraft {
-    color:black;
-    text-decoration: none;
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
 }
-
-#prullenbakken {
-    color: black;
-    text-decoration: none;
+.menu ul li:first-child{
+  margin-left: 0px;
 }
-
-a:hover {
-    color:red;
-    font-weight:bold;
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
-
-h1, h2, h3 {
-    margin-top: 4px;
-    font-weight:normal;
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
 }
-
-nav {
-    background-color: rgb(255, 255, 255);
-    display:flex;
-    justify-content:space-evenly;
+.img{
+  background: url('img3.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-
-nav div {
-    padding:8px;
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
-
-.imagegallery {
-    margin:0;
-    padding:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
 }
-
-.imagegallery figure {
-    display:block;
-    margin:0;
-    width:30%;
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
 }
-
-.imagegallery img {
-    width:100%;
-    height:200px;
-    object-fit:cover;
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
 }
-
-.imagegallery2 {
-    margin:0;
-    padding:0;
-    width: 100%;
-    display:flex;
-    justify-content:space-between;
+.center .btns{
+  margin-top: 20px;
 }
-
-.imagegallery2 figure {
-    display:block;
-    margin:0;
-    width: 30%;
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
 }
-
-.imagegallery2 img {
-    width: 300%;
-    height:300px;
-    object-fit:cover;
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
 }
-
-
-header {
-    font-size:2em;
-    padding-top:10vh;
-    color:white;
-    text-align:center;
-    height:30vh;
-    background-image:url(https://woneninsawa.nl/templates/yootheme/cache/27_Sawa_luchtfotos_Ossip_edit1-7733688e.jpeg);
-    background-size:cover;
-    background-position:center;
+.btns button:first-child:hover{
+  background: white;
+  color: black;
 }
-
-section {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 20px auto;
-    color: rgb(22, 22, 66);
-    font-size: 1.1em;
-    max-width:800px;
-}
-
-footer {
-    background-color: rgb(255, 255, 255);
-    height:30vh;
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    justify-content:center;
-}
-
-figcaption {
-    font-size: 0.7em;
-    font-style: italic;
-    opacity: 0.4;
-}
-
-@media only screen and (max-width: 600px) {
-
-    nav {
-        display: block;
-        padding: 10px;
-        position: static;
-    }
-    section {
-        max-width: 90%;
-    }
-
+.center .btns button:last-child{
+  background: white;
+  color: black;
 }
